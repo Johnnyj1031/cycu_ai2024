@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 讀取 CSV 文件
-data = pd.read_csv('C:\\Users\\Johnny\\Desktop\\112年1-10月交通事故簡訊通報資料.csv')
+data = pd.read_csv('C:\\Users\\User\\Desktop\\112年1-10月交通事故簡訊通報資料.csv')
 
 #篩選 欄位名稱 為'國道名稱'和'方向'的資料， 我只要名稱為'國道1號'的資料以及方向為'北'和'北向'的資料
 df1 = data[(data['國道名稱'] == '國道1號') & (data['方向'] == '北') | (data['方向'] == '北向')]
