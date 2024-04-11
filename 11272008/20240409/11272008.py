@@ -44,6 +44,14 @@ for i in range(len(df)):
 # 保存地圖
 m.save('earthquake_map.html')
 
+#幫我建立時間軸，讓地震點隨著地震發生時間出現在圖上
+#將地震點的資料存成geojson格式
+#將geojson格式的資料加入到地圖上
+#將地圖存成html檔案
+
+
+
+
 
 
 
