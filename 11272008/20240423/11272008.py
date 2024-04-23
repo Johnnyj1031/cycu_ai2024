@@ -9,8 +9,18 @@ iris = datasets.load_iris()
 X = iris.data
 y = iris.target
 
+# 印出加載的數據集的資料
+print(iris.data)
+print(iris.target)
+
 # 切分數據集為訓練集和測試集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# 印出切分後的訓練集和測試集的資料
+print(X_train)
+print(X_test)
+print(y_train)
+print(y_test)
 
 # 特徵標準化
 scaler = StandardScaler()
@@ -25,6 +35,9 @@ model.fit(X_train, y_train)
 
 # 進行預測
 y_pred = model.predict(X_test)
+
+# 印出預測結果
+print(y_pred)
 
 # 計算準確率
 accuracy = accuracy_score(y_test, y_pred)
